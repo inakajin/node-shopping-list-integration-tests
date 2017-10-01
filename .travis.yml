@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: G1nr3+3+pFEYiO98RqoIYlJ76eRDnrVUN2bYVXTRG4vyULt7Wct+ZPJGg1Nly/s0F0jeciQDkzyT3PRJFUfcOnEAMfx+IUSvOydWLrf5ofpIfKVsDLnLJIXAUbbKMHqiXBS7kvzPGTaOLq3W9Ul1vTVN2DItDchoKBMWMiQS37bRfh/6Jvorjc4rq2mwvXGOTm6hq+o/DwNEnWh/2qdE/DNsdJN01MZOSjDbKzPN1BG0y0jNHGgfYG17i0gXFjDd2bMUrhFXjFre6uF8Unollk36DgFNkVGjPIrYxkfM6T9HZp8c7+srfxvMmUB+njtqYmMZ+96Bv3gqWvFLBr6T7OwhveIFCg3tu8Yu/usbCZiwpD/IOgWv422fsIhYrXLYYtmVLUJYEGzfDkyMxNVGvfrbjjHi1C+HmAiZPkybyBf1XlHaSDDj3wjP+3Eld+5BG72qMdYv74vhyREtdjl4m2R/Y8LBkry5kFW6BFMgMa4LnhsJOEiH0stC2val7YHy9pSqEO19JgS5iBYapGFLs15WuwJWvuO5Cm8tBiNIAsEg3aRvhRU4JhUAt+vMDBJJKxipxMUrO8wbL6r09pbExKOMkkBjys0vTvkRxtSuhG1E7UAjl+qv686xsu8XY9jCnIVrIeD0kRitdX2f2qVwrH96/7GjVhgeFMyEkUAue50=
+  app: radiant-caverns-31420 
+  on:
+    repo: inakajin/node-shopping-list-integration-tests
+    branch: tests-for-recipes
