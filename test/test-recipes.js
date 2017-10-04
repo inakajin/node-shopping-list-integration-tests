@@ -11,7 +11,7 @@ describe('Recipes', function() {
     });
 
     after(function() {
-        return runServer();
+        return closeServer();
     });
 
     it('should list recipes on GET', function() {
@@ -20,7 +20,6 @@ describe('Recipes', function() {
             .then(function(res) {
                 res.should.have.status(200);
                 res.should.be.json;
-                res.should.be.a('array');
                 res.body.should.have.length.of.at.least(1);
 
                 res.body.forEach(function(item) {
